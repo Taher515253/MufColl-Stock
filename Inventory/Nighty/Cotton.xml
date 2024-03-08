@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+<stock>
+  <id>4016</id>
+  <name>cottonNighty</name>
+  <category>Nighty</category>
+  <subcategory>Cotton</subcategory>
+  <sizes>
+    <size>
+      <sizeType>free-size</sizeType>
+      <price>15000</price>
+      <colorsAvailable>mix-colors</colorsAvailable>
+      <quantity>14</quantity>
+    </size>
+  </sizes>
+</stock>
+</root>
