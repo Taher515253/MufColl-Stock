@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+<stock>
+  <id>1</id>
+  <name>Trouser</name>
+  <category>leggings</category>
+  <sizes>
+    <size>
+      <sizeType>xl</sizeType>
+      <price>15000</price>
+      <colorsAvailable>navy-blue, black, white</colorsAvailable>
+      <quantity>6</quantity>
+    </size>
+    <size>
+      <sizeType>2xl</sizeType>
+      <price>15000</price>
+      <colorsAvailable>Grey, navy-blue, red, black, white</colorsAvailable>
+      <quantity>13</quantity>
+    </size>
+    <size>
+      <sizeType>3xl</sizeType>
+      <price>15000</price>
+      <colorsAvailable>skin, navy-blue, black</colorsAvailable>
+      <quantity>6</quantity>
+    </size>
+    <size>
+      <sizeType>4xl</sizeType>
+      <price>15000</price>
+      <colorsAvailable>black, white</colorsAvailable>
+      <quantity>14</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>2</id>
+  <name>Plazo Embroidery</name>
+  <category>leggings</category>
+  <sizes>
+    <size>
+      <sizeType>free-size</sizeType>
+      <price>25000</price>
+      <colorsAvailable>skin</colorsAvailable>
+      <quantity>2</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>3</id>
+  <name>Plain plazo cotton</name>
+  <category>leggings</category>
+  <sizes>
+    <size>
+      <sizeType>3xl</sizeType>
+      <price>20000</price>
+      <colorsAvailable>white</colorsAvailable>
+      <quantity>3</quantity>
+    </size>
+    <size>
+      <sizeType>5xl</sizeType>
+      <price>20000</price>
+      <colorsAvailable>navy-blue, white</colorsAvailable>
+      <quantity>3</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>4</id>
+  <name>Pleated plazo</name>
+  <category>leggings</category>
+  <sizes>
+    <size>
+      <sizeType>free-size</sizeType>
+      <price>25000</price>
+      <colorsAvailable>skin, black, navy-blue</colorsAvailable>
+      <quantity>9</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>5</id>
+  <name>Kariakoo plazo</name>
+  <category>leggings</category>
+  <sizes>
+    <size>
+      <sizeType>free-size</sizeType>
+      <price>25000</price>
+      <colorsAvailable>maroon</colorsAvailable>
+      <quantity>1</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>6</id>
+  <name>Heram pants</name>
+  <category>leggings</category>
+  <sizes>
+    <size>
+      <sizeType>free-size</sizeType>
+      <price>25000</price>
+      <colorsAvailable>black</colorsAvailable>
+      <quantity>4</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>7</id>
+  <name>Office pants</name>
+  <category>leggings</category>
+  <sizes>
+    <size>
+      <sizeType>free-size</sizeType>
+      <price>20000</price>
+      <colorsAvailable>pitch, pink</colorsAvailable>
+      <quantity>2</quantity>
+    </size>
+  </sizes>
+</stock>
+</root>

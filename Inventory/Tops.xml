@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+<stock>
+  <id>14</id>
+  <name>Stand tops</name>
+  <category>Tops</category>
+  <subcategory>StandItems</subcategory>
+  <sizes>
+    <size>
+      <sizeType>mix-size</sizeType>
+      <price>25000</price>
+      <colorsAvailable>mix-color</colorsAvailable>
+      <quantity>30</quantity>
+    </size>
+  </sizes>
+</stock>
+</root>

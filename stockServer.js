@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const cors = require("cors");
+const { getData, writeData, appendTodayRecord } = require("./csvManager");
 
 const {
   Stock,
@@ -15,6 +16,8 @@ const Ajv = new require("ajv");
 const ajv = new Ajv();
 
 app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 /*
 Future TODO:
@@ -22,15 +25,27 @@ Future TODO:
   to make code more clean and modular.
 */
 
+app.get("/accounts/:date/:month/:year", (req, res) => {
+  const { date, month, year } = req.params;
+
+  const dataPromise = getData(date, month, year);
+  dataPromise.then((dataMap) => res.json(dataMap));
+});
+
+app.post("/accounts/:date/:month/:year", (req, res) => {
+  const { date, month, year } = req.params;
+  const dataArray = req.body;
+  writeData(dataArray, date, month, year);
+});
+
+app.post("/accounts/appendRecord/today", (req, res) => {
+  const record = req.body;
+  appendTodayRecord(record);
+});
+
 app.delete("/:category", (req, res) => {
   const { category, fileName } = req.params;
   const response = deleteFile(category);
-  res.sendStatus(response);
-});
-
-app.delete("/:category/:fileName", (req, res) => {
-  const { category, fileName } = req.params;
-  const response = deleteFile(category, fileName + ".xml");
   res.sendStatus(response);
 });
 
@@ -39,33 +54,18 @@ app.put("/:category/:newName", (req, res) => {
 
   try {
     fs.renameSync(
-      "./Inventory/".concat(category),
-      "./Inventory/".concat(newName)
+      "./Inventory/".concat(category, ".xml"),
+      "./Inventory/".concat(newName, ".xml")
     );
   } catch (err) {
     console.log(err);
   }
 });
 
-app.put("/:category/:subcategory/:newName", (req, res) => {
-  const { category, subcategory, newName } = req.params;
-
-  try {
-    fs.renameSync(
-      "./Inventory/".concat(category, "/", subcategory, ".xml"),
-      "./Inventory/".concat(category, "/", newName, ".xml")
-    );
-  } catch (err) {
-    console.log(err);
-  }
-});
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.post("/:category/:fileName", (req, res) => {
+app.post("/:category", (req, res) => {
   const validate = ajv.compile(stockObjSchema);
   const stockObjects = req.body;
-  const { category, fileName } = req.params;
+  const { category } = req.params;
 
   if (!stockObjects.every((object) => validate(object)))
     res
@@ -80,17 +80,14 @@ app.post("/:category/:fileName", (req, res) => {
     xmlData = xmlData.concat(stockTag);
   });
 
-  // console.log("this is data \n" + xmlData);
-
   xmlData = xmlData.concat("\n</root>");
-  writeToFile(xmlData, category, fileName + ".xml");
+  writeToFile(xmlData, category);
   res.sendStatus(200);
 });
 
-app.get("/:category/:fileName", (req, res) => {
-  const { category, fileName } = req.params;
-  const xmlData = readFromFile(category, fileName + ".xml");
-  console.log(divideXmlStockList(xmlData));
+app.get("/:category", (req, res) => {
+  const { category } = req.params;
+  const xmlData = readFromFile(category);
 
   const stockObjects = divideXmlStockList(xmlData).map(
     (stockXml) => new Stock(stockXml)
@@ -104,28 +101,23 @@ app.get("/", (req, res) => {
 
   const stockObjects = {};
 
-  categoryNames.forEach((category) => {
-    const fileNames = fs.readdirSync("./Inventory/" + category);
-    stockObjects[category] = {};
+  categoryNames.forEach((fileName) => {
+    const category = fileName.replace(".xml", "");
+    const xmlData = readFromFile(category);
 
-    fileNames.forEach((file) => {
-      const xmlData = readFromFile(category, file);
+    const fileStockObjects = divideXmlStockList(xmlData).map(
+      (stockXml) => new Stock(stockXml)
+    );
 
-      const fileStockObjects = divideXmlStockList(xmlData).map(
-        (stockXml) => new Stock(stockXml)
-      );
-      // stockObjects.push(...fileStockObjects);
-
-      stockObjects[category][file.replace(".xml", "")] = fileStockObjects;
-    });
+    stockObjects[category] = fileStockObjects;
   });
 
   res.json(stockObjects);
 });
 
-function deleteFile(category, name = "") {
+function deleteFile(category) {
   try {
-    fs.rmSync("./Inventory/" + category + "/" + name, {
+    fs.rmSync("./Inventory/" + category + ".xml", {
       recursive: true,
     });
     return 200;
@@ -135,9 +127,9 @@ function deleteFile(category, name = "") {
   }
 }
 
-function readFromFile(category, name) {
+function readFromFile(category) {
   try {
-    return fs.readFileSync("./Inventory/" + category + "/" + name, {
+    return fs.readFileSync("./Inventory/" + category + ".xml", {
       encoding: "utf8",
     });
   } catch (err) {
@@ -146,28 +138,14 @@ function readFromFile(category, name) {
 }
 
 // overwrite existing or create new file
-function writeToFile(xmlData, category, name) {
-  try {
-    // see if the category directory exists
-    fs.accessSync("./Inventory/" + category, fs.constants.F_OK);
-  } catch (err) {
-    // create the category as it doesn't exist
-    fs.mkdirSync("./Inventory/" + category);
-  } finally {
-    // now write to the file
-    fs.writeFile("./Inventory/" + category + "/" + name, xmlData, (err) => {
-      if (err) {
-        console.log(err);
-      }
-    });
-  }
+function writeToFile(xmlData, category) {
+  fs.writeFile("./Inventory/" + category + ".xml", xmlData, (err) => {
+    if (err) {
+      console.log(err);
+    }
+  });
 }
 
 app.listen(port, () => {
   console.log("listening on port: ".concat(port));
 });
-
-/*
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-*/

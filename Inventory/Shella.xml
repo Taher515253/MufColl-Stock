@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+<stock>
+  <id>13</id>
+  <name>stand shella</name>
+  <category>Shella</category>
+  <sizes>
+    <size>
+      <sizeType>N/A</sizeType>
+      <price>10000</price>
+      <colorsAvailable>mix-color</colorsAvailable>
+      <quantity>7</quantity>
+    </size>
+  </sizes>
+</stock>
+</root>

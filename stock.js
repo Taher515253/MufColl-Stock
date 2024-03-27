@@ -15,7 +15,6 @@ const stockObjSchema = {
     id: { type: "integer" },
     name: { type: "string" },
     category: { type: "string" },
-    subcategory: { type: "string" },
     sizes: {
       type: "array",
       items: {
@@ -41,7 +40,7 @@ module.exports.Stock = class Stock {
     const validate = ajv.compile(stockObjSchema);
 
     if (!validate(jsObject)) {
-      console.log(util.inspect(jsObject));
+      console.log(validate.error);
       throw "Invalid XML stock data";
     }
 
@@ -53,13 +52,14 @@ module.exports.Stock = class Stock {
 
     parseString(
       xmlStockTag,
-      { explicitArray: false, valueProcessors: [parseNumbers] },
+      {
+        explicitArray: false,
+        valueProcessors: [parseNumbers],
+        normalize: false,
+        includeWhiteChars: true,
+      },
       (error, results) => {
-        if (error) {
-          // console.log(xmlStockTag);
-          // console.log(error);
-          return;
-        }
+        if (error) return;
 
         // perform flattening operation on the array
         jsObj = results.stock;
@@ -76,7 +76,6 @@ module.exports.Stock = class Stock {
     this.id = jsObject.id;
     this.name = jsObject.name;
     this.category = jsObject.category;
-    this.subcategory = jsObject.subcategory;
     this.sizes = jsObject.sizes;
   }
 };
@@ -92,8 +91,7 @@ module.exports.divideXmlStockList = (xmlList) => {
     .replace("<root>", "")
     .replace("</root>", "")
     .replaceAll("\r\n", "")
-    .replaceAll("\n", "")
-    .replaceAll(" ", "");
+    .replaceAll("\n", "");
   /*
   TODO:
   - The above code is not clean, to use regex 
