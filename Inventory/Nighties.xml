@@ -1,78 +1,98 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <root>
 <stock>
-  <id>8</id>
-  <name>Printed Emb nighties</name>
+  <id>1</id>
+  <name>Vtouch</name>
   <category>Nighties</category>
-  <subcategory>Embroidery</subcategory>
   <sizes>
     <size>
-      <sizeType>free-size</sizeType>
-      <price>20000</price>
-      <colorsAvailable>mix-color</colorsAvailable>
-      <quantity>6</quantity>
-    </size>
-  </sizes>
-</stock>
-<stock>
-  <id>9</id>
-  <name>Plain Emb Nighties</name>
-  <category>Nighties</category>
-  <subcategory>Embroidery</subcategory>
-  <sizes>
-    <size>
-      <sizeType>free-size</sizeType>
-      <price>20000</price>
-      <colorsAvailable>pink,red,brown,maroon</colorsAvailable>
-      <quantity>22</quantity>
-    </size>
-  </sizes>
-</stock>
-<stock>
-  <id>10</id>
-  <name>CottonNighties15k</name>
-  <category>Nighties</category>
-  <subcategory>Nighties</subcategory>
-  <sizes>
-    <size>
-      <sizeType>free-size</sizeType>
+      <sizeType>Free size </sizeType>
       <price>15000</price>
-      <colorsAvailable>mix-color</colorsAvailable>
-      <quantity>13</quantity>
-    </size>
-  </sizes>
-</stock>
-<stock>
-  <id>11</id>
-  <name>Sareena Nighties</name>
-  <category>Nighties</category>
-  <subcategory>Nighties</subcategory>
-  <sizes>
-    <size>
-      <sizeType>xl</sizeType>
-      <price>15000</price>
-      <colorsAvailable>mix-color</colorsAvailable>
-      <quantity>7</quantity>
-    </size>
-    <size>
-      <sizeType>2xl</sizeType>
-      <price>15000</price>
-      <colorsAvailable>mix-color</colorsAvailable>
+      <colorsAvailable>Mix colours</colorsAvailable>
       <quantity>35</quantity>
     </size>
   </sizes>
 </stock>
 <stock>
-  <id>12</id>
-  <name>Feeding gowns</name>
+  <id>2</id>
+  <name>Embroidery </name>
   <category>Nighties</category>
-  <subcategory>Nighties</subcategory>
   <sizes>
     <size>
-      <sizeType>free-size</sizeType>
+      <sizeType>Free size</sizeType>
+      <price>20</price>
+      <colorsAvailable>Mix colours</colorsAvailable>
+      <quantity>29</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>3</id>
+  <name>Embroidery plain</name>
+  <category>Nighties</category>
+  <sizes>
+    <size>
+      <sizeType>Free size</sizeType>
       <price>20000</price>
-      <colorsAvailable>mix-color</colorsAvailable>
-      <quantity>12</quantity>
+      <colorsAvailable>Mix colours </colorsAvailable>
+      <quantity>14</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>4</id>
+  <name>Sarena Nighties </name>
+  <category>Nighties</category>
+  <sizes>
+    <size>
+      <sizeType>Free size</sizeType>
+      <price>15000</price>
+      <colorsAvailable>Mix </colorsAvailable>
+      <quantity>39</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>5</id>
+  <name>2 PC satin nighty</name>
+  <category>Nighties</category>
+  <sizes>
+    <size>
+      <sizeType>Mix size</sizeType>
+      <price>35000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>9</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>6</id>
+  <name>pyjamas nighties</name>
+  <category>Nighties</category>
+  <sizes>
+    <size>
+      <sizeType>M</sizeType>
+      <price>30</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>10</quantity>
+    </size>
+    <size>
+      <sizeType>L</sizeType>
+      <price>30000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>9</quantity>
+    </size>
+    <size>
+      <sizeType>Xl</sizeType>
+      <price>30000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>10</quantity>
+    </size>
+    <size>
+      <sizeType>2xl</sizeType>
+      <price>30000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>2</quantity>
     </size>
   </sizes>
 </stock>

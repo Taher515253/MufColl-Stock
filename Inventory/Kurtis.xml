@@ -1,57 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <root>
 <stock>
-  <id>8</id>
-  <name>Ahuja Tops</name>
-  <category>Tops</category>
+  <id>7</id>
+  <name>Ahuja kurtis</name>
+  <category>Kurtis</category>
   <sizes>
     <size>
-      <sizeType>S</sizeType>
-      <price>20000</price>
-      <colorsAvailable>Mix print</colorsAvailable>
-      <quantity>15</quantity>
-    </size>
-    <size>
       <sizeType>M</sizeType>
-      <price>25000</price>
-      <colorsAvailable>Mix print </colorsAvailable>
-      <quantity>9</quantity>
+      <price>30</price>
+      <colorsAvailable>Mix print</colorsAvailable>
+      <quantity>12</quantity>
     </size>
     <size>
       <sizeType>L</sizeType>
-      <price>25000</price>
+      <price>30000</price>
       <colorsAvailable>Mix print</colorsAvailable>
-      <quantity>15</quantity>
+      <quantity>19</quantity>
     </size>
     <size>
       <sizeType>Xl</sizeType>
-      <price>25000</price>
+      <price>30000</price>
       <colorsAvailable>Mix print</colorsAvailable>
-      <quantity>3</quantity>
+      <quantity>18</quantity>
     </size>
     <size>
       <sizeType>2xl</sizeType>
-      <price>25000</price>
-      <colorsAvailable>Mix print</colorsAvailable>
-      <quantity>25</quantity>
-    </size>
-    <size>
-      <sizeType>3xl</sizeType>
-      <price>25000</price>
+      <price>30000</price>
       <colorsAvailable>Mix print</colorsAvailable>
       <quantity>11</quantity>
     </size>
     <size>
-      <sizeType>4xl</sizeType>
-      <price>30000</price>
+      <sizeType>3xl</sizeType>
+      <price>35000</price>
       <colorsAvailable>Mix print</colorsAvailable>
-      <quantity>4</quantity>
+      <quantity>21</quantity>
+    </size>
+    <size>
+      <sizeType>4xl</sizeType>
+      <price>35000</price>
+      <colorsAvailable>Mix print</colorsAvailable>
+      <quantity>23</quantity>
     </size>
     <size>
       <sizeType>5xl</sizeType>
-      <price>30000</price>
+      <price>35000</price>
       <colorsAvailable>Mix print</colorsAvailable>
-      <quantity>5</quantity>
+      <quantity>15</quantity>
     </size>
   </sizes>
 </stock>
