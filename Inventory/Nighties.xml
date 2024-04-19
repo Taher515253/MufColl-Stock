@@ -15,14 +15,14 @@
 </stock>
 <stock>
   <id>2</id>
-  <name>Embroidery </name>
+  <name>Embroidery printed</name>
   <category>Nighties</category>
   <sizes>
     <size>
       <sizeType>Free size</sizeType>
       <price>20</price>
       <colorsAvailable>Mix colours</colorsAvailable>
-      <quantity>29</quantity>
+      <quantity>28</quantity>
     </size>
   </sizes>
 </stock>
@@ -34,8 +34,8 @@
     <size>
       <sizeType>Free size</sizeType>
       <price>20000</price>
-      <colorsAvailable>Mix colours </colorsAvailable>
-      <quantity>14</quantity>
+      <colorsAvailable>Mix colours</colorsAvailable>
+      <quantity>12</quantity>
     </size>
   </sizes>
 </stock>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+<stock>
+  <id>10</id>
+  <name>Plazo pants Kariakoo</name>
+  <category>Pants</category>
+  <sizes>
+    <size>
+      <sizeType>Free size</sizeType>
+      <price>25000</price>
+      <colorsAvailable>Navy-blue, grey, maroon, brown</colorsAvailable>
+      <quantity>5</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>11</id>
+  <name>Heram pants</name>
+  <category>Pants</category>
+  <sizes>
+    <size>
+      <sizeType>Free size</sizeType>
+      <price>25000</price>
+      <colorsAvailable>Black, grey, white, navy-blue, skin</colorsAvailable>
+      <quantity>6</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>14</id>
+  <name>Capri tights</name>
+  <category>Pants</category>
+  <sizes>
+    <size>
+      <sizeType>Xxl</sizeType>
+      <price>15000</price>
+      <colorsAvailable>Black</colorsAvailable>
+      <quantity>6</quantity>
+    </size>
+    <size>
+      <sizeType>3xl</sizeType>
+      <price>15000</price>
+      <colorsAvailable>Black</colorsAvailable>
+      <quantity>3</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>15</id>
+  <name>Ankle length </name>
+  <category>Pants</category>
+  <sizes>
+    <size>
+      <sizeType>2xl</sizeType>
+      <price>15000</price>
+      <colorsAvailable>Black, brown, navy blue, white</colorsAvailable>
+      <quantity>11</quantity>
+    </size>
+  </sizes>
+</stock>
+</root>

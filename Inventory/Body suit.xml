@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+<stock>
+  <id>12</id>
+  <name>Body suit</name>
+  <category>Body suit</category>
+  <sizes>
+    <size>
+      <sizeType>Free size</sizeType>
+      <price>15000</price>
+      <colorsAvailable>White, black, navy-blue, brown, grey</colorsAvailable>
+      <quantity>10</quantity>
+    </size>
+  </sizes>
+</stock>
+</root>

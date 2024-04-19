@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root>
+<stock>
+  <id>13</id>
+  <name>Swimming Costume</name>
+  <category>Swim wear</category>
+  <sizes>
+    <size>
+      <sizeType>Xl</sizeType>
+      <price>40000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>5</quantity>
+    </size>
+    <size>
+      <sizeType>Xxl</sizeType>
+      <price>40000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>3</quantity>
+    </size>
+    <size>
+      <sizeType>3xl</sizeType>
+      <price>40000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>4</quantity>
+    </size>
+    <size>
+      <sizeType>4xl</sizeType>
+      <price>40000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>2</quantity>
+    </size>
+  </sizes>
+</stock>
+</root>

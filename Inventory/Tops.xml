@@ -55,4 +55,118 @@
     </size>
   </sizes>
 </stock>
+<stock>
+  <id>9</id>
+  <name>Sale tops</name>
+  <category>Tops</category>
+  <sizes>
+    <size>
+      <sizeType>Mix-size</sizeType>
+      <price>20000</price>
+      <colorsAvailable>Mix print</colorsAvailable>
+      <quantity>16</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>16</id>
+  <name>Tshitij tops </name>
+  <category>Tops</category>
+  <sizes>
+    <size>
+      <sizeType>M</sizeType>
+      <price>25000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>7</quantity>
+    </size>
+    <size>
+      <sizeType>L</sizeType>
+      <price>25000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>5</quantity>
+    </size>
+    <size>
+      <sizeType>Xl</sizeType>
+      <price>25000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>5</quantity>
+    </size>
+    <size>
+      <sizeType>Xxl</sizeType>
+      <price>25000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>6</quantity>
+    </size>
+    <size>
+      <sizeType>3xl</sizeType>
+      <price>25000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>5</quantity>
+    </size>
+    <size>
+      <sizeType>4xl</sizeType>
+      <price>25000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>5</quantity>
+    </size>
+    <size>
+      <sizeType>5xl</sizeType>
+      <price>25000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>3</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>17</id>
+  <name>Ahuja chiffon </name>
+  <category>Tops</category>
+  <sizes>
+    <size>
+      <sizeType>Xxl</sizeType>
+      <price>25000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>22</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>18</id>
+  <name>Kapachee</name>
+  <category>Tops</category>
+  <sizes>
+    <size>
+      <sizeType>Mix sizes</sizeType>
+      <price>25000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>23</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>19</id>
+  <name>Kapachee net tops</name>
+  <category>Tops</category>
+  <sizes>
+    <size>
+      <sizeType>Mix</sizeType>
+      <price>25000</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>13</quantity>
+    </size>
+  </sizes>
+</stock>
+<stock>
+  <id>20</id>
+  <name>Ahuja flare</name>
+  <category>Tops</category>
+  <sizes>
+    <size>
+      <sizeType>Free</sizeType>
+      <price>30</price>
+      <colorsAvailable>Mix</colorsAvailable>
+      <quantity>11</quantity>
+    </size>
+  </sizes>
+</stock>
 </root>

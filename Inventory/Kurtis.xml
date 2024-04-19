@@ -27,7 +27,7 @@
       <sizeType>2xl</sizeType>
       <price>30000</price>
       <colorsAvailable>Mix print</colorsAvailable>
-      <quantity>11</quantity>
+      <quantity>10</quantity>
     </size>
     <size>
       <sizeType>3xl</sizeType>
@@ -45,7 +45,7 @@
       <sizeType>5xl</sizeType>
       <price>35000</price>
       <colorsAvailable>Mix print</colorsAvailable>
-      <quantity>15</quantity>
+      <quantity>13</quantity>
     </size>
   </sizes>
 </stock>
